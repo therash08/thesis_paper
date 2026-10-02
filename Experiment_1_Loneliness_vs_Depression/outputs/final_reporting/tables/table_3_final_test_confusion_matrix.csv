@@ -1,0 +1,3 @@
+Model,Correct Loneliness,Loneliness → Depression,Loneliness Correct %,Correct Depression,Depression → Loneliness,Depression Correct %
+Linear SVM,15725,6805,69.79582778517532,83503,7502,91.75649689577496
+Logistic Regression,15740,6790,69.8624056813138,83544,7461,91.80154936541948

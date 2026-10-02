@@ -1,0 +1,8 @@
+step,description,before,removed,after,percent_removed
+STEP A,Remove rows without a parseable Reddit timestamp,791985,0,791985,0.0
+STEP B,Keep only actual r/depression or r/lonely/r/loneliness posts,791985,10309,781676,1.3016660669078328
+STEP C,Remove missing/deleted/AutoModerator authors for user-independent splitting,781676,6866,774810,0.8783690429282721
+STEP D,Require at least 5 characters and at least 2 alphabetic words,774810,3350,771460,0.432364063447813
+STEP E,Remove ambiguous author+timestamp identities,771460,16,771444,0.0020739895782023693
+STEP F,Remove exact content appearing under both labels,771444,5543,765901,0.7185226665837053
+STEP G,Remove same-class exact duplicate text; retain earliest occurrence,765901,8977,756924,1.1720835982718394

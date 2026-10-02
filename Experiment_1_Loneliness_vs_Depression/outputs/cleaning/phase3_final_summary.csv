@@ -1,0 +1,2 @@
+original_rows,final_rows,rows_removed,percent_removed,depression_posts,loneliness_posts,depression_percent,loneliness_percent,class_ratio_dep_to_lon,total_unique_authors,depression_authors,loneliness_authors,shared_authors,duplicate_record_ids,duplicate_content_remaining,cross_class_content_remaining,missing_author,missing_datetime,empty_text,invalid_labels,all_integrity_checks_passed
+791985,756924,35061,4.426978,606718,150206,80.155736,19.844264,4.039239,392870,326609,82025,15764,0,0,0,0,0,0,0,True

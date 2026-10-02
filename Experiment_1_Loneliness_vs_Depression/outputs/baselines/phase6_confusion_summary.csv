@@ -1,0 +1,7 @@
+model,true_loneliness,loneliness_predicted_as_depression,depression_predicted_as_loneliness,true_depression
+Logistic Regression,18513,4017,13260,77747
+Logistic Regression Undersampled,18701,3829,13962,77045
+Linear SVM,18256,4274,13858,77149
+Extra Trees,16364,6166,10799,80208
+XGBoost,17913,4617,13637,77370
+Random Forest,16137,6393,10966,80041

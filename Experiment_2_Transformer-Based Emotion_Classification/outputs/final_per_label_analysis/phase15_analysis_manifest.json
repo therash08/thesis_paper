@@ -1,0 +1,48 @@
+{
+    "phase": "final_per_label_diagnostic_analysis",
+    "test_samples": 906,
+    "number_of_labels": 8,
+    "labels": [
+        "anger",
+        "brain dysfunction (forget)",
+        "emptiness",
+        "hopelessness",
+        "loneliness",
+        "sadness",
+        "suicide intent",
+        "worthlessness"
+    ],
+    "models": [
+        "BERT",
+        "RoBERTa",
+        "MentalBERT",
+        "ClinicalBERT"
+    ],
+    "source": "frozen Phase 13 final test predictions",
+    "configuration_sha256": "96b1ccd5df2b8032fa060872110979f44800debe8e8891dd199c24f993255e2f",
+    "final_test_results_sha256": "b0edd8937def432d9d9bc9f316fad4b98e43435024a72a409c69a9fb12085110",
+    "thresholds": {
+        "BERT": 0.38,
+        "RoBERTa": 0.35,
+        "MentalBERT": 0.35,
+        "ClinicalBERT": 0.34
+    },
+    "per_label_metrics": [
+        "Precision",
+        "Recall/Sensitivity",
+        "F1",
+        "Specificity",
+        "NPV",
+        "FPR",
+        "FNR",
+        "Balanced Accuracy",
+        "MCC",
+        "ROC-AUC",
+        "Average Precision"
+    ],
+    "micro_curve_flattening": "descriptive visualization only",
+    "inferential_test_on_flattened_decisions": false,
+    "threshold_retuning": false,
+    "model_retraining": false,
+    "checkpoint_selection": false
+}

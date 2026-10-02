@@ -1,0 +1,7 @@
+{
+    "model": "Tuned Logistic Regression",
+    "selection_metric": "Macro-F1",
+    "threshold": 0.34,
+    "validation_only": true,
+    "test_used": false
+}

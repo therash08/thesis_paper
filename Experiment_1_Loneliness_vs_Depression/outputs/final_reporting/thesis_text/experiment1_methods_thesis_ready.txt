@@ -1,0 +1,15 @@
+Experiment 1: Leakage-Controlled Classification of Loneliness- and Depression-Associated Reddit Discourse
+
+The revised Experiment 1 was designed to determine whether Reddit discourse associated with loneliness and depression could be distinguished using lexical text features under a leakage-controlled and user-independent evaluation framework. Labels represented subreddit-associated discourse categories rather than clinical diagnoses.
+
+Following data integrity auditing and cleaning, exact duplicate content, cross-class duplicate-content conflicts, invalid authors, unusable text, and conflicting post identities were removed. The final cleaned corpus was divided into training, validation, and test partitions using author-grouped stratification. All posts from the same author were restricted to a single partition, preventing user-level information leakage across the training, validation, and test sets.
+
+Text representation was based on TF-IDF features using unigrams and bigrams. The TF-IDF vocabulary was fitted exclusively on the training partition and was subsequently applied unchanged to the validation and test sets. The full representation contained 20,000 features.
+
+Class imbalance was handled primarily through full-data model training rather than random undersampling. Logistic Regression and Linear Support Vector Machine models were evaluated using the full TF-IDF representation. A train-only random undersampling benchmark was retained for methodological comparison, but the full-data strategy was adopted because undersampling discarded a substantial proportion of available training observations without improving validation performance.
+
+Hyperparameters were selected using the training set and the author-disjoint validation set. The untouched test set was not used for hyperparameter selection, threshold selection, feature selection, or model choice. The primary model was frozen before test evaluation as a Linear SVM with C = 0.1, hinge loss, no class weighting, and a frozen decision-function threshold of 0.497099. Logistic Regression was retained as a secondary interpretable model with C = 0.315, balanced class weighting, and a frozen probability threshold of 0.34.
+
+Model performance was assessed using accuracy, balanced accuracy, Macro-F1, Matthews correlation coefficient (MCC), ROC-AUC, class-specific F1 scores, and precision-recall AUC for the loneliness class. Uncertainty on the final test set was quantified using author-cluster bootstrap resampling, in which authors rather than individual posts were sampled with replacement. This preserved within-author dependence during uncertainty estimation.
+
+Additional robustness analyses evaluated the influence of explicit condition-name vocabulary, performance on naturally direct-term-free posts, broader conceptual-cue masking, feature-coefficient stability across models, and coefficient stability under repeated author-level subsampling.

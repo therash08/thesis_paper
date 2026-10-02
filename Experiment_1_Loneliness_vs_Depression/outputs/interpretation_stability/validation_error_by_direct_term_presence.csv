@@ -1,0 +1,5 @@
+true_class,direct_term_present,n,correct,errors,error_rate
+Depression,False,53616,49285,4331,0.08077812593255744
+Depression,True,37391,34487,2904,0.07766574844213849
+Loneliness,False,13549,8263,5286,0.3901394936895712
+Loneliness,True,8981,7777,1204,0.13406079501169135

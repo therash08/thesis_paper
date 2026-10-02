@@ -1,0 +1,3 @@
+model,true_loneliness,loneliness_as_depression,depression_as_loneliness,true_depression
+Linear SVM,15725,6805,7502,83503
+Logistic Regression,15740,6790,7461,83544

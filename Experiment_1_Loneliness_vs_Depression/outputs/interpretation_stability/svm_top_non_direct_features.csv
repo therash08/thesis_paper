@@ -1,0 +1,61 @@
+feature,svm_coefficient,lr_coefficient,svm_abs_coefficient,lr_abs_coefficient,direct_shortcut,extended_cue,svm_abs_rank,lr_abs_rank,svm_direction,lr_direction,direction
+suicide,2.107679762151643,4.493289,2.107679762151643,4.493289,False,True,24,8,Depression-associated,Depression-associated,Depression-associated
+therapist,1.9144645277506698,4.3624625,1.9144645277506698,4.3624625,False,False,35,10,Depression-associated,Depression-associated,Depression-associated
+job,1.8891031356515773,4.399457,1.8891031356515773,4.399457,False,False,36,9,Depression-associated,Depression-associated,Depression-associated
+my friends,1.8522957831253957,2.361895,1.8522957831253957,2.361895,False,False,38,109,Depression-associated,Depression-associated,Depression-associated
+suicidal,1.8220027763170579,3.5665267,1.8220027763170579,3.5665267,False,True,40,33,Depression-associated,Depression-associated,Depression-associated
+die,1.7098406474665986,3.9948385,1.7098406474665986,3.9948385,False,False,53,21,Depression-associated,Depression-associated,Depression-associated
+therapy,1.6738972758768196,3.6586018,1.6738972758768196,3.6586018,False,False,55,31,Depression-associated,Depression-associated,Depression-associated
+help,1.5967138215827115,2.5708919,1.5967138215827115,2.5708919,False,False,61,79,Depression-associated,Depression-associated,Depression-associated
+kill,1.5956445548302913,4.0054774,1.5956445548302913,4.0054774,False,False,62,18,Depression-associated,Depression-associated,Depression-associated
+struggling,1.5490748934368375,2.922529,1.5490748934368375,2.922529,False,False,63,52,Depression-associated,Depression-associated,Depression-associated
+killed,1.513613102711986,3.926185,1.513613102711986,3.926185,False,False,70,25,Depression-associated,Depression-associated,Depression-associated
+fucking,1.2955410595870818,2.3186343,1.2955410595870818,2.3186343,False,False,97,118,Depression-associated,Depression-associated,Depression-associated
+kill myself,1.2710421676962154,2.2580194,1.2710421676962154,2.2580194,False,False,103,130,Depression-associated,Depression-associated,Depression-associated
+support,1.2673276843737702,2.037125,1.2673276843737702,2.037125,False,False,104,163,Depression-associated,Depression-associated,Depression-associated
+not alone,1.2602934172304667,2.2329865,1.2602934172304667,2.2329865,False,True,108,132,Depression-associated,Depression-associated,Depression-associated
+motivation,1.238483958806206,3.1568813,1.238483958806206,3.1568813,False,False,111,44,Depression-associated,Depression-associated,Depression-associated
+worthless,1.236952738253973,1.7700124,1.236952738253973,1.7700124,False,False,112,242,Depression-associated,Depression-associated,Depression-associated
+killing,1.2273362891297215,2.701352,1.2273362891297215,2.701352,False,False,115,65,Depression-associated,Depression-associated,Depression-associated
+don want,1.2122042377437514,2.2300766,1.2122042377437514,2.2300766,False,False,117,133,Depression-associated,Depression-associated,Depression-associated
+mental,1.1762144668899535,2.4784057,1.1762144668899535,2.4784057,False,False,123,93,Depression-associated,Depression-associated,Depression-associated
+everything,1.1443912377553889,2.1431024,1.1443912377553889,2.1431024,False,False,133,142,Depression-associated,Depression-associated,Depression-associated
+for help,1.1426067610799835,1.9202495,1.1426067610799835,1.9202495,False,False,134,193,Depression-associated,Depression-associated,Depression-associated
+medication,1.122840481931553,4.2983546,1.122840481931553,4.2983546,False,False,141,11,Depression-associated,Depression-associated,Depression-associated
+died,1.1081741606808884,2.3614962,1.1081741606808884,2.3614962,False,False,145,110,Depression-associated,Depression-associated,Depression-associated
+failure,1.0748648584620037,2.3454988,1.0748648584620037,2.3454988,False,False,155,112,Depression-associated,Depression-associated,Depression-associated
+happiness,1.0635379202899118,1.9161637,1.0635379202899118,1.9161637,False,False,158,195,Depression-associated,Depression-associated,Depression-associated
+jobs,1.05196965071629,2.5905652,1.05196965071629,2.5905652,False,False,164,76,Depression-associated,Depression-associated,Depression-associated
+meds,1.0473934667551352,3.991678,1.0473934667551352,3.991678,False,False,166,22,Depression-associated,Depression-associated,Depression-associated
+alive,1.0407017770530078,2.0811749,1.0407017770530078,2.0811749,False,False,171,155,Depression-associated,Depression-associated,Depression-associated
+when alone,1.0393917892495725,1.4577361,1.0393917892495725,1.4577361,False,True,172,439,Depression-associated,Depression-associated,Depression-associated
+alone,-4.232024457351964,-8.5647745,4.232024457351964,8.5647745,False,True,5,5,Loneliness-associated,Loneliness-associated,Loneliness-associated
+friends,-3.4462312382494655,-6.4363265,3.4462312382494655,6.4363265,False,False,6,6,Loneliness-associated,Loneliness-associated,Loneliness-associated
+chat,-2.870640068165862,-3.8188336,2.870640068165862,3.8188336,False,False,7,27,Loneliness-associated,Loneliness-associated,Loneliness-associated
+dm,-2.7933060599251465,-3.6910963,2.7933060599251465,3.6910963,False,False,8,30,Loneliness-associated,Loneliness-associated,Loneliness-associated
+lonelier,-2.568672568828406,-4.0966864,2.568672568828406,4.0966864,False,False,10,13,Loneliness-associated,Loneliness-associated,Loneliness-associated
+loneliest,-2.5211058477536756,-4.00241,2.5211058477536756,4.00241,False,False,11,19,Loneliness-associated,Loneliness-associated,Loneliness-associated
+conversation,-2.5017719629336153,-3.7408805,2.5017719629336153,3.7408805,False,False,12,28,Loneliness-associated,Loneliness-associated,Loneliness-associated
+couples,-2.473429197170285,-3.9498484,2.473429197170285,3.9498484,False,False,14,23,Loneliness-associated,Loneliness-associated,Loneliness-associated
+friend,-2.369876201058064,-3.916242,2.369876201058064,3.916242,False,False,15,26,Loneliness-associated,Loneliness-associated,Loneliness-associated
+discord,-2.336286567900188,-3.2832336,2.336286567900188,3.2832336,False,False,16,39,Loneliness-associated,Loneliness-associated,Loneliness-associated
+hmu,-2.303996350393699,-3.1093922,2.303996350393699,3.1093922,False,False,17,45,Loneliness-associated,Loneliness-associated,Loneliness-associated
+message,-2.2799968864657,-3.18057,2.2799968864657,3.18057,False,False,18,41,Loneliness-associated,Loneliness-associated,Loneliness-associated
+girl,-2.263737721685571,-4.013165,2.263737721685571,4.013165,False,False,19,17,Loneliness-associated,Loneliness-associated,Loneliness-associated
+connection,-2.2575252722905303,-3.5400918,2.2575252722905303,3.5400918,False,False,20,34,Loneliness-associated,Loneliness-associated,Loneliness-associated
+friendship,-2.2272241114656857,-3.7058337,2.2272241114656857,3.7058337,False,False,21,29,Loneliness-associated,Loneliness-associated,Loneliness-associated
+ghosted,-2.1886159468166433,-3.1762247,2.1886159468166433,3.1762247,False,False,22,42,Loneliness-associated,Loneliness-associated,Loneliness-associated
+cuddle,-2.129813736482456,-2.4916382,2.129813736482456,2.4916382,False,False,23,90,Loneliness-associated,Loneliness-associated,Loneliness-associated
+loner,-2.097597943437857,-3.4181538,2.097597943437857,3.4181538,False,False,25,35,Loneliness-associated,Loneliness-associated,Loneliness-associated
+romantic,-2.0801088712162272,-3.1663847,2.0801088712162272,3.1663847,False,False,26,43,Loneliness-associated,Loneliness-associated,Loneliness-associated
+touch,-2.0771591032518795,-3.2490845,2.0771591032518795,3.2490845,False,False,27,40,Loneliness-associated,Loneliness-associated,Loneliness-associated
+single,-2.0313186785396513,-3.3439677,2.0313186785396513,3.3439677,False,False,28,37,Loneliness-associated,Loneliness-associated,Loneliness-associated
+talk,-1.9964492569407415,-3.5768502,1.9964492569407415,3.5768502,False,False,29,32,Loneliness-associated,Loneliness-associated,Loneliness-associated
+someone,-1.960000726239574,-3.926724,1.960000726239574,3.926724,False,False,31,24,Loneliness-associated,Loneliness-associated,Loneliness-associated
+relationship,-1.9560840697332706,-4.0002637,1.9560840697332706,4.0002637,False,False,32,20,Loneliness-associated,Loneliness-associated,Loneliness-associated
+being alone,-1.8799035284417596,-2.2370818,1.8799035284417596,2.2370818,False,True,37,131,Loneliness-associated,Loneliness-associated,Loneliness-associated
+make friends,-1.8264511625115674,-2.9256067,1.8264511625115674,2.9256067,False,False,39,51,Loneliness-associated,Loneliness-associated,Loneliness-associated
+kiss,-1.8033201857792625,-2.526565,1.8033201857792625,2.526565,False,False,41,85,Loneliness-associated,Loneliness-associated,Loneliness-associated
+find someone,-1.791532931574197,-2.4395127,1.791532931574197,2.4395127,False,False,42,96,Loneliness-associated,Loneliness-associated,Loneliness-associated
+conversations,-1.7819957090248042,-2.9150982,1.7819957090248042,2.9150982,False,False,43,53,Loneliness-associated,Loneliness-associated,Loneliness-associated
+making friends,-1.778930660065112,-2.5195808,1.778930660065112,2.5195808,False,False,44,87,Loneliness-associated,Loneliness-associated,Loneliness-associated

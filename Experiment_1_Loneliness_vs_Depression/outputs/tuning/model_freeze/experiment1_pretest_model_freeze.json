@@ -1,0 +1,48 @@
+{
+    "experiment": "Experiment 1 - Loneliness vs Depression Reddit Discourse",
+    "selection_protocol": {
+        "training": "Author-grouped training split",
+        "model_selection": "Author-disjoint validation split",
+        "threshold_selection": "Validation split only",
+        "primary_metric": "Macro-F1",
+        "test_used_before_freeze": false
+    },
+    "primary_model": {
+        "name": "Linear SVM",
+        "feature_space": "TF-IDF 20k",
+        "C": 0.1,
+        "class_weight": null,
+        "loss": "hinge",
+        "tol": 0.001,
+        "decision_threshold": 0.4970989756007757,
+        "threshold_type": "decision_function score",
+        "validation_macro_f1": 0.8123220109493219,
+        "validation_mcc": 0.6247987909217374,
+        "validation_roc_auc": 0.911678869505124,
+        "validation_loneliness_f1": 0.7003602226831132
+    },
+    "secondary_model": {
+        "name": "Logistic Regression",
+        "feature_space": "TF-IDF 20k",
+        "C": 0.315,
+        "class_weight": "balanced",
+        "solver": "saga",
+        "decision_threshold": 0.3400000000000001,
+        "threshold_type": "probability",
+        "validation_macro_f1": 0.8117163738921531,
+        "validation_mcc": 0.6236399524180894,
+        "validation_roc_auc": 0.9149801292946688,
+        "validation_loneliness_f1": 0.6995906279940771
+    },
+    "artifact_hashes": {
+        "primary_svm_model": "51067567897fba0224d833c761709d62996179ca39579fbc140d70f876fddfba",
+        "secondary_lr_model": "a14ba6bd7fac45b55bee50f4f1f33874688d65a933a201f1131d03a451fcfb82",
+        "tfidf_vectorizer": "0370779bd85ee3016cee74fb13b4d0be5fead9745edf2bc94352f5e4aeac2ba4"
+    },
+    "rules_after_freeze": {
+        "change_model_using_test_results": false,
+        "change_threshold_using_test_results": false,
+        "change_hyperparameters_using_test_results": false,
+        "report_both_frozen_models": true
+    }
+}

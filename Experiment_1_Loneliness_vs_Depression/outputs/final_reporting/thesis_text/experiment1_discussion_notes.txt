@@ -1,0 +1,77 @@
+Key Discussion Points for Experiment 1
+
+1. User-independent generalization
+
+The revised experiment used author-disjoint training, validation, and test partitions. All posts belonging to the same Reddit author were restricted to a single partition. Consequently, the final independent test results were not influenced by the same users appearing during both model development and final evaluation.
+
+2. Effect of class imbalance
+
+The cleaned dataset remained naturally imbalanced, with approximately 80% depression-associated posts and 20% loneliness-associated posts. The primary modelling strategy retained the full training dataset rather than balancing the complete corpus through random undersampling. A train-only undersampling benchmark was evaluated separately. Undersampling substantially reduced the amount of training information available without producing an improvement over full-data modelling.
+
+3. Performance of the two strongest models
+
+The frozen Linear SVM and Logistic Regression models achieved very similar performance on the independent test set. The Linear SVM achieved a Macro-F1 of 0.804 and MCC of 0.609, while Logistic Regression achieved a Macro-F1 of 0.805 and MCC of 0.610.
+
+Paired author-cluster bootstrap confidence intervals for the differences in Macro-F1 and MCC included zero. Therefore, the small numerical differences in these overall classification measures should not be interpreted as evidence that either classifier was clearly superior.
+
+Logistic Regression, however, produced a higher ROC-AUC than Linear SVM on the test set. The paired confidence interval for the SVM-minus-Logistic-Regression ROC-AUC difference remained below zero, indicating consistently stronger ranking performance for Logistic Regression under the bootstrap analysis.
+
+The Linear SVM nevertheless remained the designated primary model because the model-selection rule and primary model had been frozen before the test set was opened.
+
+4. Importance of explicit condition-related terminology
+
+Explicit depression- and loneliness-related terms were among the highest-weighted lexical features. Terms such as "lonely", "depression", "loneliness", and "depressed" occupied the highest coefficient ranks in the linear models.
+
+Masking these direct condition-name terms reduced validation Macro-F1 by approximately 0.034 for both models. This indicates that explicit self-labelling and condition-related vocabulary contributed materially to discrimination.
+
+However, performance did not collapse after removal of these cues. Among naturally occurring validation posts containing none of the direct condition-name terms, both models retained a Macro-F1 of approximately 0.772. Therefore, the models were not relying exclusively on explicit subreddit-associated terminology.
+
+5. Difficulty of loneliness-associated discourse
+
+Loneliness-associated posts were substantially more difficult to classify than depression-associated posts. On the final test set, the Linear SVM achieved a loneliness F1 of approximately 0.687 compared with a depression F1 of approximately 0.921.
+
+Validation error analysis showed that loneliness posts without explicit condition-name terms were particularly difficult. Their error rate was approximately 39%, compared with approximately 13% among loneliness posts containing direct condition-related terminology.
+
+Short loneliness posts were also more difficult to classify than longer posts. This suggests that when explicit self-labelling cues and richer contextual information are absent, loneliness-associated discourse overlaps substantially with language occurring in depression-associated communities.
+
+6. Broader linguistic patterns
+
+After excluding direct depression/loneliness terms, depression-associated features included lexical patterns related to suicide, therapy, help-seeking, work, struggle, and severe distress.
+
+Loneliness-associated features included terms related to friendship, conversation, messaging, social connection, online communication, and interpersonal interaction.
+
+These patterns suggest that the models captured broader differences in discourse in addition to direct condition-name vocabulary. They should nevertheless be interpreted as statistical associations within the Reddit corpus rather than psychological or causal mechanisms.
+
+7. Feature stability
+
+Feature estimates were highly stable across models and across repeated author-level subsampling.
+
+The global coefficient Spearman correlation between Linear SVM and Logistic Regression was approximately 0.842 and the Pearson correlation was approximately 0.902.
+
+Under repeated 80% author-level subsampling, mean coefficient Spearman correlations with the full-training models were approximately 0.928 for Linear SVM and 0.939 for Logistic Regression.
+
+Mean Top-500 feature-set Jaccard similarity was approximately 0.785 for Linear SVM and 0.795 for Logistic Regression, while the directions of the reference Top-500 coefficients were preserved in all subsampling runs.
+
+These findings indicate that the major lexical associations were not highly dependent on a particular subset of Reddit users.
+
+8. Generalization from validation to test
+
+Performance decreased only modestly between the author-disjoint validation and independent test partitions.
+
+Linear SVM Macro-F1 decreased from approximately 0.812 to 0.804, while Logistic Regression decreased from approximately 0.812 to 0.805.
+
+ROC-AUC and class-specific F1 scores also showed relatively small validation-to-test changes. This provides evidence that the fitted models generalized beyond the specific users observed during model development.
+
+9. Interpretation of the labels
+
+The labels in this experiment were derived from subreddit-associated discourse categories. They should not be interpreted as verified clinical diagnoses.
+
+Accordingly, the models distinguish linguistic patterns associated with Reddit communities focused on depression and loneliness. They do not diagnose depression, determine loneliness status, estimate symptom severity, or infer the mental-health condition of an individual Reddit user.
+
+10. Comparison with the earlier Experiment 1
+
+The revised experiment should not be presented as a strict head-to-head reproduction of the earlier analysis because the corpus, time coverage, preprocessing, leakage controls, feature construction, splitting protocol, and class-handling strategy differ.
+
+Any comparison should therefore be described as a methodological comparison. The revised framework provides stronger controls against duplicate-content leakage, author overlap, preprocessing leakage, artificial test balancing, and post-test model selection.
+
+Consequently, differences in numerical performance between the earlier and revised experiments cannot be attributed solely to the choice of classifier.

@@ -1,0 +1,6 @@
+author
+created_utc
+selftext
+subreddit
+timestamp
+title

@@ -1,0 +1,58 @@
+{
+    "BERT": {
+        "fixed_threshold": 0.5,
+        "global_threshold": 0.41,
+        "per_label_thresholds": {
+            "anger": 0.37,
+            "brain dysfunction (forget)": 0.29,
+            "emptiness": 0.58,
+            "hopelessness": 0.45,
+            "loneliness": 0.42,
+            "sadness": 0.48,
+            "suicide intent": 0.41,
+            "worthlessness": 0.45
+        }
+    },
+    "RoBERTa": {
+        "fixed_threshold": 0.5,
+        "global_threshold": 0.46,
+        "per_label_thresholds": {
+            "anger": 0.45,
+            "brain dysfunction (forget)": 0.43,
+            "emptiness": 0.52,
+            "hopelessness": 0.43,
+            "loneliness": 0.49,
+            "sadness": 0.59,
+            "suicide intent": 0.45,
+            "worthlessness": 0.3
+        }
+    },
+    "MentalBERT": {
+        "fixed_threshold": 0.5,
+        "global_threshold": 0.44,
+        "per_label_thresholds": {
+            "anger": 0.34,
+            "brain dysfunction (forget)": 0.49,
+            "emptiness": 0.29,
+            "hopelessness": 0.38,
+            "loneliness": 0.25,
+            "sadness": 0.53,
+            "suicide intent": 0.62,
+            "worthlessness": 0.5
+        }
+    },
+    "ClinicalBERT": {
+        "fixed_threshold": 0.5,
+        "global_threshold": 0.37,
+        "per_label_thresholds": {
+            "anger": 0.5,
+            "brain dysfunction (forget)": 0.27,
+            "emptiness": 0.37,
+            "hopelessness": 0.44,
+            "loneliness": 0.28,
+            "sadness": 0.46,
+            "suicide intent": 0.45,
+            "worthlessness": 0.38
+        }
+    }
+}

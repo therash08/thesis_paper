@@ -1,0 +1,38 @@
+{
+    "phase": "structured_final_test_error_analysis",
+    "source": "frozen Phase 13 test predictions",
+    "test_samples": 906,
+    "models": [
+        "BERT",
+        "RoBERTa",
+        "MentalBERT",
+        "ClinicalBERT"
+    ],
+    "labels": [
+        "anger",
+        "brain dysfunction (forget)",
+        "emptiness",
+        "hopelessness",
+        "loneliness",
+        "sadness",
+        "suicide intent",
+        "worthlessness"
+    ],
+    "configuration_sha256": "96b1ccd5df2b8032fa060872110979f44800debe8e8891dd199c24f993255e2f",
+    "final_test_results_sha256": "b0edd8937def432d9d9bc9f316fad4b98e43435024a72a409c69a9fb12085110",
+    "analyses": [
+        "sample-level exact-match errors",
+        "label error counts",
+        "false positives",
+        "false negatives",
+        "label cardinality",
+        "cross-model disagreement",
+        "shared model errors",
+        "high-confidence errors"
+    ],
+    "post_test_threshold_tuning": false,
+    "post_test_retraining": false,
+    "post_test_checkpoint_selection": false,
+    "post_test_hyperparameter_change": false,
+    "inferential_independence_assumed_for_label_cells": false
+}

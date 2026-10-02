@@ -1,0 +1,13 @@
+{
+    "max_length": 256,
+    "train_batch_size": 16,
+    "eval_batch_size": 32,
+    "dynamic_padding": true,
+    "train_shuffle": true,
+    "validation_shuffle": false,
+    "test_shuffle": false,
+    "num_workers": 0,
+    "pin_memory": true,
+    "num_labels": 8,
+    "seed": 42
+}

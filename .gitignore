@@ -1,0 +1,66 @@
+.venv/
+venv/
+env/
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.ipynb_checkpoints/
+
+.vscode/
+.idea/
+
+*.pth
+*.pt
+*.ckpt
+
+.DS_Store
+Thumbs.db
+# Virtual environments
+**/.venv/
+**/venv/
+
+# Large generated experiment artifacts
+Experiment_1_Loneliness_vs_Depression/outputs/cleaning/*.pkl
+Experiment_1_Loneliness_vs_Depression/outputs/splits/*.pkl
+
+# Python cache
+**/__pycache__/
+*.pyc
+
+# ML checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# ===============================
+# Large Experiment 1 artifacts
+# ===============================
+Experiment_1_Loneliness_vs_Depression/outputs/cleaning/*.pkl
+Experiment_1_Loneliness_vs_Depression/outputs/splits/*.pkl
+Experiment_1_Loneliness_vs_Depression/outputs/features/*.npz
+Experiment_1_Loneliness_vs_Depression/outputs/baselines/models/*.joblib
+
+# ===============================
+# Large Experiment 2 model weights
+# ===============================
+Experiment_2_Transformer-Based Emotion_Classification/outputs/checkpoints/
+Experiment_2_Transformer-Based Emotion_Classification/outputs/final_models/
+
+# Hugging Face / PyTorch large weights
+*.safetensors
+
+# Virtual environments
+**/.venv/
+**/venv/
+
+# Python cache
+**/__pycache__/
+*.pyc
+
+# ML checkpoints
+*.pt
+*.pth
+*.ckpt

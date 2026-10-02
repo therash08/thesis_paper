@@ -1,0 +1,8 @@
+Experiment 1 label definition
+=============================
+
+label 1 = posts whose actual subreddit field is 'depression'
+label 0 = posts whose actual subreddit field is 'lonely' or 'loneliness'
+
+Labels represent subreddit-associated discourse, not clinical diagnosis.
+Source filename is not used as the final class label.

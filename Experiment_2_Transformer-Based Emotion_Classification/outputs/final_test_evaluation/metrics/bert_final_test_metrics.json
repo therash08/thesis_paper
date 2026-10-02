@@ -1,0 +1,24 @@
+{
+    "model": "BERT",
+    "checkpoint": "d:\\Thesis_Project\\Experiment_2_Transformer-Based Emotion_Classification\\outputs\\final_models\\bert\\seed_42",
+    "configuration_sha256": "96b1ccd5df2b8032fa060872110979f44800debe8e8891dd199c24f993255e2f",
+    "test_samples": 906,
+    "threshold": 0.38,
+    "metrics": {
+        "Micro_Precision": 0.7810320781032078,
+        "Micro_Recall": 0.855222968845449,
+        "Micro_F1": 0.8164455459979589,
+        "Macro_Precision": 0.7460643999818505,
+        "Macro_Recall": 0.8040984333398922,
+        "Macro_F1": 0.7724634721065817,
+        "Weighted_F1": 0.813050450862586,
+        "Sample_F1": 0.7658448799177277,
+        "Hamming_Loss": 0.17370309050772628,
+        "Subset_Accuracy": 0.23620309050772628,
+        "Macro_ROC_AUC": 0.8827201174379888,
+        "Micro_ROC_AUC": 0.910403419416187,
+        "Macro_Average_Precision": 0.8463260674610161,
+        "Micro_Average_Precision": 0.8992297743190409,
+        "Test_Loss": 0.38120021659543707
+    }
+}

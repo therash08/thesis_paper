@@ -1,0 +1,60 @@
+{
+    "status": "LOCKED_BEFORE_TEST",
+    "development_samples": 5121,
+    "locked_test_samples": 906,
+    "test_accessed": false,
+    "primary_development_model": "RoBERTa",
+    "architecture_selection_metric": "3-fold mean Macro-F1",
+    "final_training_seed": 42,
+    "final_training_dataset": "train_final + val_final",
+    "final_training_uses_validation": false,
+    "early_stopping_final_training": false,
+    "epoch_selection_rule": "median best epoch from 3-fold CV",
+    "threshold_selection_rule": "single global threshold optimized on OOF Macro-F1",
+    "models": {
+        "BERT": {
+            "checkpoint": "bert-base-uncased",
+            "epochs": 5,
+            "threshold": 0.38,
+            "learning_rate": 2e-05,
+            "weight_decay": 0.01,
+            "warmup_ratio": 0.1,
+            "max_length": 256,
+            "train_batch_size": 16,
+            "seed": 42
+        },
+        "RoBERTa": {
+            "checkpoint": "roberta-base",
+            "epochs": 5,
+            "threshold": 0.35,
+            "learning_rate": 2e-05,
+            "weight_decay": 0.01,
+            "warmup_ratio": 0.1,
+            "max_length": 256,
+            "train_batch_size": 16,
+            "seed": 42
+        },
+        "MentalBERT": {
+            "checkpoint": "mental/mental-bert-base-uncased",
+            "epochs": 5,
+            "threshold": 0.35,
+            "learning_rate": 2e-05,
+            "weight_decay": 0.01,
+            "warmup_ratio": 0.1,
+            "max_length": 256,
+            "train_batch_size": 16,
+            "seed": 42
+        },
+        "ClinicalBERT": {
+            "checkpoint": "emilyalsentzer/Bio_ClinicalBERT",
+            "epochs": 5,
+            "threshold": 0.34,
+            "learning_rate": 2e-05,
+            "weight_decay": 0.01,
+            "warmup_ratio": 0.1,
+            "max_length": 256,
+            "train_batch_size": 16,
+            "seed": 42
+        }
+    }
+}

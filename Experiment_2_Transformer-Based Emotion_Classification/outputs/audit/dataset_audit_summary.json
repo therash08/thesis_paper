@@ -1,0 +1,25 @@
+{
+    "total_samples": 6037,
+    "train_samples": 4225,
+    "validation_samples": 906,
+    "test_samples": 906,
+    "number_of_columns": 8,
+    "number_of_labels": 8,
+    "labels": [
+        "anger",
+        "brain dysfunction (forget)",
+        "emptiness",
+        "hopelessness",
+        "loneliness",
+        "sadness",
+        "suicide intent",
+        "worthlessness"
+    ],
+    "average_labels_per_sample": 3.6453536524763956,
+    "minimum_labels_per_sample": 1,
+    "maximum_labels_per_sample": 8,
+    "unique_label_combinations": 180,
+    "exact_duplicate_text_groups": 6,
+    "cross_split_duplicate_groups": 2,
+    "conflicting_duplicate_groups": 1
+}

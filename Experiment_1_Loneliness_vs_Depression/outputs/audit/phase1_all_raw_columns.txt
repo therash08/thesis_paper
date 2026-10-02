@@ -1,0 +1,8 @@
+001. Unnamed: 0
+002. author
+003. created_utc
+004. score
+005. selftext
+006. subreddit
+007. timestamp
+008. title

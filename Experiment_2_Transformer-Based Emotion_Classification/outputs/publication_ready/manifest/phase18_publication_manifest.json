@@ -1,0 +1,39 @@
+{
+    "phase": "final_results_consolidation",
+    "purpose": "publication_ready_reporting",
+    "models": [
+        "BERT",
+        "RoBERTa",
+        "MentalBERT",
+        "ClinicalBERT"
+    ],
+    "test_samples": 906,
+    "emotion_labels": [
+        "anger",
+        "brain dysfunction (forget)",
+        "emptiness",
+        "hopelessness",
+        "loneliness",
+        "sadness",
+        "suicide intent",
+        "worthlessness"
+    ],
+    "cross_validation": "3-fold multilabel-stratified",
+    "primary_selection_metric": "Macro-F1",
+    "final_test_locked": true,
+    "bootstrap_iterations": 5000,
+    "paired_randomization_iterations": 5000,
+    "multiple_testing_correction": "Holm",
+    "xai_method": "SHAP Partition Explainer",
+    "xai_representation": "FP32 token-ID masking",
+    "xai_samples_per_model": 16,
+    "xai_total_explanations": 64,
+    "configuration_sha256": "96b1ccd5df2b8032fa060872110979f44800debe8e8891dd199c24f993255e2f",
+    "final_test_sha256": "b0edd8937def432d9d9bc9f316fad4b98e43435024a72a409c69a9fb12085110",
+    "phase17b_manifest": "d:\\Thesis_Project\\Experiment_2_Transformer-Based Emotion_Classification\\outputs\\full_shap_analysis\\phase17b_shap_manifest.json",
+    "model_retraining": false,
+    "threshold_retuning": false,
+    "checkpoint_reselection": false,
+    "hyperparameter_change": false,
+    "test_based_model_selection": false
+}

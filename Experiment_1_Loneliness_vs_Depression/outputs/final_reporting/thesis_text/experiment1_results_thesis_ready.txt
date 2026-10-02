@@ -1,0 +1,25 @@
+Final Independent Test Performance
+
+The frozen models were evaluated once on the untouched author-disjoint test set containing 113,535 posts, including 22,530 loneliness-associated posts and 91,005 depression-associated posts from 58,688 unique authors.
+
+The pre-specified primary Linear SVM achieved an accuracy of 0.874, balanced accuracy of 0.808, Macro-F1 of 0.804, MCC of 0.609, and ROC-AUC of 0.907. Its loneliness-class F1 was 0.687, whereas the depression-class F1 was 0.921. Author-cluster bootstrap analysis estimated a 95% confidence interval of 0.799–0.808 for Macro-F1, 0.599–0.617 for MCC, and 0.901–0.911 for ROC-AUC.
+
+The frozen Logistic Regression model produced very similar classification performance, with accuracy of 0.874, balanced accuracy of 0.808, Macro-F1 of 0.805, MCC of 0.610, and ROC-AUC of 0.911. Its 95% author-cluster bootstrap confidence interval was 0.800–0.809 for Macro-F1 and 0.905–0.915 for ROC-AUC.
+
+The paired author-cluster bootstrap difference in Macro-F1 between the Linear SVM and Logistic Regression was -0.0007, with a 95% interval from -0.0022 to 0.0008. Because this interval included zero, the small numerical difference in Macro-F1 did not provide clear evidence of a meaningful difference between the two models. In contrast, the paired SVM-minus-Logistic-Regression ROC-AUC difference was -0.0039, with a 95% interval from -0.0046 to -0.0032; this interval remained below zero, indicating consistently higher ranking performance for Logistic Regression under the paired bootstrap analysis. The pre-specified Linear SVM nevertheless remained the primary model because model selection had been frozen before the test set was opened.
+
+Robustness to Explicit Condition-Related Vocabulary
+
+Ablation analysis on the validation set showed that explicit depression- and loneliness-related label terms contributed materially to classification. For the Linear SVM, masking direct condition-name terms reduced Macro-F1 from 0.812 to 0.779, a change of -0.034. However, the model retained a Macro-F1 of 0.772 on naturally occurring posts that contained none of the direct condition-name terms. These findings indicate that explicit condition-related vocabulary contributed substantially to discrimination but did not fully account for the model's performance.
+
+Feature Stability and Interpretability
+
+Coefficient patterns were strongly related across the two linear models. The global SVM–Logistic Regression coefficient Spearman correlation was 0.842, the Pearson correlation was 0.902, and coefficient signs agreed for 82.5% of the full 20,000-feature vocabulary.
+
+Feature estimates were also stable under repeated author-level subsampling. The Linear SVM achieved a mean coefficient Spearman correlation of 0.928 with the full-training model, while Logistic Regression achieved 0.939. Mean Top-500 feature-set Jaccard similarity was 0.785 for the Linear SVM and 0.795 for Logistic Regression.
+
+Generalization
+
+Performance decreased only modestly from the author-disjoint validation set to the independent test set. Linear SVM Macro-F1 declined from 0.812 to 0.804, while Logistic Regression Macro-F1 declined from 0.812 to 0.805. The limited validation-to-test change, together with author-disjoint splitting and author-cluster uncertainty estimation, supports the conclusion that the observed discrimination was not solely attributable to overlap between users or duplicated content.
+
+Overall, the results demonstrate that loneliness-associated and depression-associated Reddit discourse can be distinguished with substantial but incomplete accuracy using lexical TF-IDF features. The findings should be interpreted as classification of subreddit-associated discourse rather than diagnosis or identification of clinical mental-health conditions.

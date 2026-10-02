@@ -1,0 +1,17 @@
+Selection_Order,Test_Index,ID,True_Label_Count,True_Labels,Text_Length
+1,667,107a0dj,4,brain dysfunction (forget) | hopelessness | sadness | worthlessness,480
+2,722,16x5vag,7,anger | brain dysfunction (forget) | hopelessness | loneliness | sadness | suicide intent | worthlessness,98
+3,497,d0judl,6,anger | emptiness | hopelessness | loneliness | sadness | worthlessness,674
+4,525,lghad1,3,anger | hopelessness | loneliness,609
+5,605,17a4w6o,6,brain dysfunction (forget) | emptiness | hopelessness | loneliness | sadness | worthlessness,758
+6,539,141cj66,2,hopelessness | worthlessness,528
+7,309,11q4ikh,6,brain dysfunction (forget) | emptiness | hopelessness | loneliness | sadness | worthlessness,473
+8,42,yvlui4,1,sadness,150
+9,171,oef5qe,1,sadness,537
+10,816,flwg6v,1,loneliness,396
+11,521,o5dwl2,1,emptiness,225
+12,262,k6qzu7,2,loneliness | sadness,933
+13,781,kxtuue,1,sadness,295
+14,659,k3mu97,3,hopelessness | sadness | worthlessness,947
+15,444,j97g2f,1,sadness,937
+16,364,htnofh,1,sadness,104

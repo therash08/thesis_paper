@@ -1,0 +1,9 @@
+Emotion,Negative_Support,False_Positive_By_All_4,False_Positive_By_At_Least_3,False_Positive_By_At_Least_2,False_Positive_By_Any_Model,All_4_FP_Rate
+anger,561,46,78,121,203,0.08199643493761141
+brain dysfunction (forget),735,21,49,80,140,0.02857142857142857
+emptiness,565,58,86,117,177,0.10265486725663717
+hopelessness,272,79,102,131,189,0.29044117647058826
+loneliness,486,42,72,101,158,0.08641975308641975
+sadness,209,91,133,154,183,0.4354066985645933
+suicide intent,674,31,50,68,116,0.04599406528189911
+worthlessness,472,76,115,153,218,0.16101694915254236

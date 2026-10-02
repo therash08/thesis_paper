@@ -1,0 +1,15 @@
+{
+    "fit_scope": "training_only",
+    "max_features": 20000,
+    "min_df": 10,
+    "max_df": 0.98,
+    "ngram_min": 1,
+    "ngram_max": 2,
+    "sublinear_tf": true,
+    "norm": "l2",
+    "dtype": "float32",
+    "selected_k": 512,
+    "selection_method": "chi2_train_only",
+    "standard_scaler_applied": false,
+    "standard_scaler_reason": "TF-IDF vectors are already L2-normalized"
+}

@@ -1,0 +1,34 @@
+{
+    "experiment": "Experiment 1 - Loneliness vs Depression Reddit Discourse",
+    "evaluation_status": "FINAL TEST EVALUATION COMPLETE",
+    "primary_model": {
+        "model": "Linear SVM",
+        "threshold": 0.4970989756007757,
+        "threshold_type": "decision_function score",
+        "test_macro_f1": 0.8042093920521274,
+        "test_mcc": 0.6085524434811115,
+        "test_roc_auc": 0.9068560342828552,
+        "test_loneliness_f1": 0.6873265292742095
+    },
+    "secondary_model": {
+        "model": "Logistic Regression",
+        "threshold": 0.3400000000000001,
+        "threshold_type": "probability",
+        "test_macro_f1": 0.8048928479204447,
+        "test_mcc": 0.6099098209622789,
+        "test_roc_auc": 0.910771233774023,
+        "test_loneliness_f1": 0.688373313507249
+    },
+    "post_test_rules": {
+        "retune_hyperparameters": false,
+        "change_threshold": false,
+        "switch_primary_model_based_on_test": false,
+        "refit_vectorizer_using_test": false,
+        "feature_selection_using_test": false
+    },
+    "frozen_artifact_hashes": {
+        "primary_svm_model": "51067567897fba0224d833c761709d62996179ca39579fbc140d70f876fddfba",
+        "secondary_lr_model": "a14ba6bd7fac45b55bee50f4f1f33874688d65a933a201f1131d03a451fcfb82",
+        "tfidf_vectorizer": "0370779bd85ee3016cee74fb13b4d0be5fead9745edf2bc94352f5e4aeac2ba4"
+    }
+}

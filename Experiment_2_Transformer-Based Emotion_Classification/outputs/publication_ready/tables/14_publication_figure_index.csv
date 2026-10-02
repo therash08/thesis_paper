@@ -1,0 +1,6 @@
+Figure,Description,Path
+Figure 1,Locked test Macro-F1 and Micro-F1 comparison,d:\Thesis_Project\Experiment_2_Transformer-Based Emotion_Classification\outputs\publication_ready\figures\figure_01_locked_test_f1_comparison.png
+Figure 2,Per-label F1 heatmap across transformer models,d:\Thesis_Project\Experiment_2_Transformer-Based Emotion_Classification\outputs\publication_ready\figures\figure_02_per_label_f1_heatmap.png
+Figure 3,Development CV versus locked test Macro-F1,d:\Thesis_Project\Experiment_2_Transformer-Based Emotion_Classification\outputs\publication_ready\figures\figure_03_cv_vs_test_macro_f1.png
+Figure 4,Macro-F1 with bootstrap 95% confidence intervals,d:\Thesis_Project\Experiment_2_Transformer-Based Emotion_Classification\outputs\publication_ready\figures\figure_04_macro_f1_bootstrap_ci.png
+Figure 5,Mean absolute SHAP attribution by emotion and model,d:\Thesis_Project\Experiment_2_Transformer-Based Emotion_Classification\outputs\publication_ready\figures\figure_05_shap_emotion_model_heatmap.png

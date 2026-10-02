@@ -1,0 +1,5 @@
+filename,rows,columns,column_names
+LD DA 1.csv,223,5,score | selftext | subreddit | title | Label
+LD EL1.csv,200,6,score | selftext | subreddit | title | Label | CAT 1
+LD PF1.csv,200,6,score | selftext | subreddit | title | Label | CAT 1
+LD TS 1.csv,200,6,score | selftext | subreddit | title | Label | CAT 1

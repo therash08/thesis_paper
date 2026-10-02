@@ -1,0 +1,30 @@
+{
+    "dataset": {
+        "train_samples": 4215,
+        "validation_samples": 906,
+        "test_samples": 906,
+        "total_samples": 6027
+    },
+    "num_labels": 8,
+    "labels": [
+        "anger",
+        "brain dysfunction (forget)",
+        "emptiness",
+        "hopelessness",
+        "loneliness",
+        "sadness",
+        "suicide intent",
+        "worthlessness"
+    ],
+    "models": {
+        "BERT": "bert-base-uncased",
+        "RoBERTa": "roberta-base",
+        "MentalBERT": "mental/mental-bert-base-uncased",
+        "ClinicalBERT": "emilyalsentzer/Bio_ClinicalBERT"
+    },
+    "baseline_max_length": 256,
+    "primary_selection_metric": "Macro-F1",
+    "secondary_metric": "Micro-F1",
+    "initial_threshold": 0.5,
+    "seed": 42
+}

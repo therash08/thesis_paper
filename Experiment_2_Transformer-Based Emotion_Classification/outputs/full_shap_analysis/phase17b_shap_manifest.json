@@ -1,0 +1,35 @@
+{
+    "phase": "full_four_model_shap_analysis",
+    "models": [
+        "BERT",
+        "RoBERTa",
+        "MentalBERT",
+        "ClinicalBERT"
+    ],
+    "primary_model": "RoBERTa",
+    "samples_per_model": 16,
+    "total_sample_explanations": 64,
+    "outputs_per_explanation": 8,
+    "shap_algorithm": "Partition Explainer",
+    "masking_representation": "token_ids",
+    "xai_inference_precision": "FP32",
+    "masked_text_retokenization": false,
+    "same_samples_all_models": true,
+    "sample_selection_seed": 2026,
+    "maximum_additivity_tolerance": 0.01,
+    "configuration_sha256": "96b1ccd5df2b8032fa060872110979f44800debe8e8891dd199c24f993255e2f",
+    "final_test_results_sha256": "b0edd8937def432d9d9bc9f316fad4b98e43435024a72a409c69a9fb12085110",
+    "full_shap_results_sha256": "e82946e91c9c2196ad8f78fda3f659f90fbbdb2eefc0f23b51fa900f016a0693",
+    "checkpoint_weight_sha256": {
+        "BERT": "be2009c055657aa167970f4262db42984dd123808811af6f92fdff90d8d4e989",
+        "RoBERTa": "462a002d36480214421d8e6e155e6fa861070f14488376aa33f7ed41d8ef14d3",
+        "MentalBERT": "9e15d0343972572fc33c01635938b02e5d0a3c1df668c4de397c9d1ec8f399f5",
+        "ClinicalBERT": "b82e982d1a27b7fcd19d194b94f492a76d893287eeabc78912689dd12f5613fc"
+    },
+    "frozen_binary_predictions_reproduced": true,
+    "post_test_training": false,
+    "threshold_retuning": false,
+    "checkpoint_reselection": false,
+    "hyperparameter_change": false,
+    "xai_used_for_model_selection": false
+}

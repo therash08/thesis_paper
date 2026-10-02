@@ -1,0 +1,9 @@
+Column,Train_dtype,Validation_dtype,Test_dtype
+id,str,str,str
+title,str,str,str
+post,str,str,str
+text,str,str,str
+upvotes,int64,float64,int64
+date,str,str,str
+emotions,object,object,object
+label_id,int64,int64,int64

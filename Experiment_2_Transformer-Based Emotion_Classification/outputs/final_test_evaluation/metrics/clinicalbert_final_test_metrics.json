@@ -1,0 +1,24 @@
+{
+    "model": "ClinicalBERT",
+    "checkpoint": "d:\\Thesis_Project\\Experiment_2_Transformer-Based Emotion_Classification\\outputs\\final_models\\clinicalbert\\seed_42",
+    "configuration_sha256": "96b1ccd5df2b8032fa060872110979f44800debe8e8891dd199c24f993255e2f",
+    "test_samples": 906,
+    "threshold": 0.34,
+    "metrics": {
+        "Micro_Precision": 0.7393252503953611,
+        "Micro_Recall": 0.8567501527183873,
+        "Micro_F1": 0.7937181663837012,
+        "Macro_Precision": 0.7109808811831275,
+        "Macro_Recall": 0.8070679530865168,
+        "Macro_F1": 0.7534141448581567,
+        "Weighted_F1": 0.7909138212185542,
+        "Sample_F1": 0.7406193818445473,
+        "Hamming_Loss": 0.201158940397351,
+        "Subset_Accuracy": 0.17328918322295805,
+        "Macro_ROC_AUC": 0.8586968260505257,
+        "Micro_ROC_AUC": 0.8911640153975796,
+        "Macro_Average_Precision": 0.8227884015424342,
+        "Micro_Average_Precision": 0.8777467120382643,
+        "Test_Loss": 0.41584990987714554
+    }
+}

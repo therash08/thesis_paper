@@ -1,0 +1,24 @@
+{
+    "model": "RoBERTa",
+    "checkpoint": "d:\\Thesis_Project\\Experiment_2_Transformer-Based Emotion_Classification\\outputs\\final_models\\roberta\\seed_42",
+    "configuration_sha256": "96b1ccd5df2b8032fa060872110979f44800debe8e8891dd199c24f993255e2f",
+    "test_samples": 906,
+    "threshold": 0.35,
+    "metrics": {
+        "Micro_Precision": 0.7760042564511839,
+        "Micro_Recall": 0.8909590714722052,
+        "Micro_F1": 0.8295179866344377,
+        "Macro_Precision": 0.7445952878445274,
+        "Macro_Recall": 0.858119854661499,
+        "Macro_F1": 0.7970887994283452,
+        "Weighted_F1": 0.829560396226597,
+        "Sample_F1": 0.7880711023095129,
+        "Hamming_Loss": 0.16542494481236203,
+        "Subset_Accuracy": 0.2693156732891832,
+        "Macro_ROC_AUC": 0.9027626756601924,
+        "Micro_ROC_AUC": 0.9236594446061894,
+        "Macro_Average_Precision": 0.8707816916562243,
+        "Micro_Average_Precision": 0.9142658780345605,
+        "Test_Loss": 0.35579083192164274
+    }
+}

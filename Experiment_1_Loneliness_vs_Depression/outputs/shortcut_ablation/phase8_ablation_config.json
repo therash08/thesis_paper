@@ -1,0 +1,36 @@
+{
+    "primary_direct_terms": [
+        "depression",
+        "depressions",
+        "depressed",
+        "depressive",
+        "depressives",
+        "depressing",
+        "lonely",
+        "loneliness"
+    ],
+    "extended_terms": [
+        "depression",
+        "depressions",
+        "depressed",
+        "depressive",
+        "depressives",
+        "depressing",
+        "lonely",
+        "loneliness",
+        "alone",
+        "isolate",
+        "isolated",
+        "isolates",
+        "isolating",
+        "isolation",
+        "isolations",
+        "suicide",
+        "suicidal",
+        "suicidality"
+    ],
+    "replacement": "delete term and collapse whitespace",
+    "model_retraining": false,
+    "threshold_reoptimization": false,
+    "test_used": false
+}

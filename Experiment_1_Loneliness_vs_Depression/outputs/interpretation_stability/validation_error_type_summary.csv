@@ -1,0 +1,5 @@
+error_type,n,percent
+Correct Depression,83772,73.78387662171804
+Correct Loneliness,16040,14.127553132459022
+Depression -> Loneliness,7235,6.372372002078618
+Loneliness -> Depression,6490,5.71619824374433

@@ -1,0 +1,24 @@
+{
+    "model": "MentalBERT",
+    "checkpoint": "d:\\Thesis_Project\\Experiment_2_Transformer-Based Emotion_Classification\\outputs\\final_models\\mentalbert\\seed_42",
+    "configuration_sha256": "96b1ccd5df2b8032fa060872110979f44800debe8e8891dd199c24f993255e2f",
+    "test_samples": 906,
+    "threshold": 0.35,
+    "metrics": {
+        "Micro_Precision": 0.7755324959038776,
+        "Micro_Recall": 0.8674404398289554,
+        "Micro_F1": 0.8189158016147635,
+        "Macro_Precision": 0.7476501566401567,
+        "Macro_Recall": 0.8288888760353794,
+        "Macro_F1": 0.7857463088084334,
+        "Weighted_F1": 0.8178091250168079,
+        "Sample_F1": 0.772808856583691,
+        "Hamming_Loss": 0.17328918322295805,
+        "Subset_Accuracy": 0.24834437086092714,
+        "Macro_ROC_AUC": 0.8901429959605753,
+        "Micro_ROC_AUC": 0.9138794728348806,
+        "Macro_Average_Precision": 0.8617475161103607,
+        "Micro_Average_Precision": 0.9046978740665885,
+        "Test_Loss": 0.3746407265563148
+    }
+}

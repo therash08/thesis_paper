@@ -1,0 +1,24 @@
+{
+    "phase": "final_locked_test_evaluation",
+    "test_samples": 906,
+    "development_samples": 5121,
+    "configuration_sha256": "96b1ccd5df2b8032fa060872110979f44800debe8e8891dd199c24f993255e2f",
+    "configuration_changed_after_lock": false,
+    "models": [
+        "BERT",
+        "RoBERTa",
+        "MentalBERT",
+        "ClinicalBERT"
+    ],
+    "thresholds": {
+        "BERT": 0.38,
+        "RoBERTa": 0.35,
+        "MentalBERT": 0.35,
+        "ClinicalBERT": 0.34
+    },
+    "test_used_for_tuning": false,
+    "test_used_for_model_selection": false,
+    "test_used_for_epoch_selection": false,
+    "test_used_for_threshold_selection": false,
+    "post_test_retraining_permitted": false
+}

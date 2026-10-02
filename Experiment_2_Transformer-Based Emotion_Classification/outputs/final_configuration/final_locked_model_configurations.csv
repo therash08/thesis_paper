@@ -1,0 +1,5 @@
+Model,Source_Checkpoint,Training_Samples,Final_Epochs,Learning_Rate,Weight_Decay,Warmup_Ratio,Max_Length,Train_Batch_Size,Seed,Global_Threshold,CV_Macro_F1_Mean,CV_Macro_F1_SD,Test_Accessed
+BERT,bert-base-uncased,5121,5,2e-05,0.01,0.1,256,16,42,0.38,0.7566610490256105,0.005628668226668288,False
+RoBERTa,roberta-base,5121,5,2e-05,0.01,0.1,256,16,42,0.35,0.7851288649579189,0.0064086927538596255,False
+MentalBERT,mental/mental-bert-base-uncased,5121,5,2e-05,0.01,0.1,256,16,42,0.35,0.765456064312712,0.005103993318832947,False
+ClinicalBERT,emilyalsentzer/Bio_ClinicalBERT,5121,5,2e-05,0.01,0.1,256,16,42,0.34,0.7147018439623606,0.012395695815717627,False
